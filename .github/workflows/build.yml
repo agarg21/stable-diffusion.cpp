@@ -5,7 +5,8 @@ on:
     inputs:
       create_release:
         description: "Create new release"
-        required: true
+        required: false
+        default: false
         type: boolean
   push:
     branches:
@@ -195,7 +196,7 @@ jobs:
 
   build-and-push-docker-images:
     name: Build and push container images
-    if: ${{ github.event_name != 'pull_request' }}
+    if: false # fork-only measurement: no image push
     runs-on: ${{ matrix.runner }}
 
     permissions:
