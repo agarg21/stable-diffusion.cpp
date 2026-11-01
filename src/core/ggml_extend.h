@@ -250,4 +250,3 @@ ggml_tensor* ggml_ext_vec_concat(ggml_context* ctx,
                                  int dim);
 
 #endif  // __SD_CORE_GGML_EXTEND_H__
-// measure-162b: worst-case edit (widely-included header)
