@@ -331,3 +331,4 @@ void free_upscaler_ctx(upscaler_ctx_t* upscaler_ctx) {
     }
     free(upscaler_ctx);
 }
+// measure-162b: worst-case edit (src .cpp)
